@@ -1,8 +1,12 @@
-SOURCE=$(wildcard *.ly)
-TARGET=scary2015.pdf
+SOURCE=scary2015.ly
+MIDI=scary2015.midi
+SOUNDFONT?=/usr/share/sounds/sf2/HeavenChoir.sf2
+TARGET=scary2015.wav
+all: $(TARGET) 
 
-all: $(TARGET)
+$(TARGET): $(MIDI)
+	fluidsynth -F $@ $(SOUNDFONT) $<
 
-$(TARGET): $(SOURCE)
-	lilypond $?
+$(MIDI): $(SOURCE)
+	lilypond $<
 
