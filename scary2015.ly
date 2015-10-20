@@ -1,14 +1,13 @@
 %{ Entry for Scary 2015 competition by Ryutaro Ikeda %}
-\include "articulate.ly"
 \version "2.18.2"
 \header {
-	title = "Untitled"
+	title = "The Spirits"
 	composer = "Ryutaro Ikeda"
-	subtitle = "16 Oct 2015"
+	subtitle = "19 Oct 2015"
 }
 
 soprano = \new Voice = "1" {
-	\set midiInstrument = #"reed organ"
+	\set midiInstrument = #"church organ"
 %	\voiceOne
 	\relative c'' {
 		\set Staff.instrumentName = #"Soprano"
@@ -34,7 +33,7 @@ soprano = \new Voice = "1" {
 }
 
 mezzosoprano = \new Voice = "2" {
-	\set midiInstrument = #"reed organ"
+	\set midiInstrument = #"church organ"
 %	\voiceTwo
 	\relative c'' {
 		\set Staff.instrumentName = #"Mez"
@@ -58,7 +57,7 @@ mezzosoprano = \new Voice = "2" {
 }
 
 tenor = \new Voice = "3" {
-	\set midiInstrument = #"reed organ"
+	\set midiInstrument = #"church organ"
 %	\voiceThree
 	\relative c'' {
 		\set Staff.instrumentName = #"Tenor"
@@ -85,13 +84,13 @@ tenor = \new Voice = "3" {
 }
 
 baritone = \new Voice = "4" {
-	\set midiInstrument = #"reed organ"
+	\set midiInstrument = #"church organ"
 %	\voiceFour
 	\relative c' {
 		\set Staff.instrumentName = #"Baritone"
 		\clef "bass" 
 		\time 4/4
-		f2. ees4 | cis2 c2 | b1 | d,2 r4 g4 | d2. r4 |
+		f2. ees4 | des2 c2 | b1 | d,2 r4 g4 | d2. r4 |
 		\break
 		\time 3/4
 		\key bes \minor
